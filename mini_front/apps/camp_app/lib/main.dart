@@ -10,8 +10,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 /// `base_application` (the root widget). `main` just spreads the overrides into a
 /// `ProviderScope` and runs the app.
 void main() => runApp(
-      ProviderScope(
-        overrides: campOverrides(),
-        child: const CampApp(),
-      ),
-    );
+  ProviderScope(
+    overrides: campOverrides(),
+    child: const CampApp(),
+  ),
+);

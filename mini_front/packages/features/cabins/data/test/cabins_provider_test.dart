@@ -6,7 +6,7 @@ import 'package:shouldly/shouldly.dart';
 
 import 'cabins_provider_test.mocks.dart';
 
-@GenerateNiceMocks([MockSpec<CabinsRepository>()])
+@GenerateMocks([CabinsRepository])
 void main() {
   given(
     'a repository that returns three cabins',
@@ -24,12 +24,13 @@ void main() {
     providers: (context) => [
       cabinsRepositoryProvider.overrideWith((ref) => context.mockOf<CabinsRepository>()),
     ],
-  )
-      .when('the cabins are loaded', (sut, context) => context.ref.read(sut.future))
-      .then('the state holds those three cabins', (result, context) {
-        result.length.should.be(3);
-        result.first.name.should.be("Eagle's Nest");
-      });
+  ).when('the cabins are loaded', (sut, context) => context.ref.read(sut.future)).then(
+    'the state holds those three cabins',
+    (result, context) {
+      result.length.should.be(3);
+      result.first.name.should.be("Eagle's Nest");
+    },
+  );
 
   given(
     'a repository that fails to fetch',
@@ -41,9 +42,10 @@ void main() {
     providers: (context) => [
       cabinsRepositoryProvider.overrideWith((ref) => context.mockOf<CabinsRepository>()),
     ],
-  )
-      .when('the cabins are loaded', (sut, context) => context.ref.read(sut.future))
-      .thenShouldThrow('the load surfaces the error', (error, stackTrace, context) {
-        error.toString().should.contain('no network');
-      });
+  ).when('the cabins are loaded', (sut, context) => context.ref.read(sut.future)).thenShouldThrow(
+    'the load surfaces the error',
+    (error, stackTrace, context) {
+      error.toString().should.contain('no network');
+    },
+  );
 }

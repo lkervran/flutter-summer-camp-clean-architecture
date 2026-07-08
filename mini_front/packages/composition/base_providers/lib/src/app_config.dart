@@ -16,6 +16,6 @@ class AppConfig {
 
 @riverpod
 AppConfig appConfig(Ref ref) => const AppConfig(
-      campTitle: 'Flutter Summer Camp',
-      region: 'summer-2026',
-    );
+  campTitle: 'Flutter Summer Camp',
+  region: 'summer-2026',
+);

@@ -10,5 +10,4 @@ part 'providers.g.dart';
 /// *interface* — it has no idea where the data actually comes from. Invalidate
 /// this provider to refresh the list.
 @riverpod
-Future<List<Cabin>> cabins(Ref ref) =>
-    ref.watch(cabinsRepositoryProvider).fetchCabins();
+Future<List<Cabin>> cabins(Ref ref) => ref.watch(cabinsRepositoryProvider).fetchCabins();

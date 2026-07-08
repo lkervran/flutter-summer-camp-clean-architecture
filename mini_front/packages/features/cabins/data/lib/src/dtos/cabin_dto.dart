@@ -19,8 +19,7 @@ abstract class CabinDto with _$CabinDto {
 
   const CabinDto._();
 
-  factory CabinDto.fromJson(Map<String, dynamic> json) =>
-      _$CabinDtoFromJson(json);
+  factory CabinDto.fromJson(Map<String, dynamic> json) => _$CabinDtoFromJson(json);
 
   Cabin toEntity() => Cabin(description: description, id: id, name: name);
 }

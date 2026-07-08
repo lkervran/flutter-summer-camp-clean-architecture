@@ -9,11 +9,9 @@ part 'providers_internal.g.dart';
 /// package barrel — only `bindProviders()` is public.
 
 @riverpod
-CabinsDataSource cabinsDataSource(Ref ref) =>
-    const FakeCabinsDataSource(region: 'base-camp');
+CabinsDataSource cabinsDataSource(Ref ref) => const FakeCabinsDataSource(region: 'base-camp');
 
 @riverpod
-CabinsRepository cabinsSingleSourceRepository(Ref ref) =>
-    CabinsSingleSourceRepository(
-      dataSource: ref.watch(cabinsDataSourceProvider),
-    );
+CabinsRepository cabinsSingleSourceRepository(Ref ref) => CabinsSingleSourceRepository(
+  dataSource: ref.watch(cabinsDataSourceProvider),
+);

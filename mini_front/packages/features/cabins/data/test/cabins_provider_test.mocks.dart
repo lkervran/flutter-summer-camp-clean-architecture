@@ -28,14 +28,15 @@ import 'package:mockito/mockito.dart' as _i1;
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockCabinsRepository extends _i1.Mock implements _i2.CabinsRepository {
+  MockCabinsRepository() {
+    _i1.throwOnMissingStub(this);
+  }
+
   @override
   _i3.Future<List<_i4.Cabin>> fetchCabins() =>
       (super.noSuchMethod(
             Invocation.method(#fetchCabins, []),
             returnValue: _i3.Future<List<_i4.Cabin>>.value(<_i4.Cabin>[]),
-            returnValueForMissingStub: _i3.Future<List<_i4.Cabin>>.value(
-              <_i4.Cabin>[],
-            ),
           )
           as _i3.Future<List<_i4.Cabin>>);
 }

@@ -11,5 +11,4 @@ part 'providers_di.g.dart';
 /// This "throw-to-override" pattern is how every feature gets its dependencies
 /// without depending on a concrete implementation.
 @riverpod
-CabinsRepository cabinsRepository(Ref ref) =>
-    throw const UnregisteredProviderException('cabinsRepositoryProvider');
+CabinsRepository cabinsRepository(Ref ref) => throw const UnregisteredProviderException('cabinsRepositoryProvider');

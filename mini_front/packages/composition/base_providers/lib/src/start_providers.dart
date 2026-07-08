@@ -7,5 +7,5 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 /// contracts; here we spread them all into a single list the app hands to its
 /// `ProviderScope`. Add a feature → spread its `bindProviders()` here.
 List<Override> campOverrides() => [
-      ...cabins_data.bindProviders(),
-    ];
+  ...cabins_data.bindProviders(),
+];

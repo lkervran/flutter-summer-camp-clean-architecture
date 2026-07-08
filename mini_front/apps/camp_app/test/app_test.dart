@@ -7,10 +7,10 @@ import 'package:givn/givn.dart';
 
 void main() {
   givenWidget(
-    'the camp app wired with the real cabins feature',
-    (context) => const CampApp(),
-    providers: (context) => campOverrides(),
-  )
+        'the camp app wired with the real cabins feature',
+        (context) => const CampApp(),
+        providers: (context) => campOverrides(),
+      )
       .when('it boots and the cabins finish loading', (sut, context, tester, providers) async {
         await tester.pumpWidget(ProviderScope(overrides: providers, child: sut));
         // First frame: the router builds and the cabins are still loading.
