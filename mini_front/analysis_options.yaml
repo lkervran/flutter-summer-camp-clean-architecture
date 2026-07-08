@@ -1,0 +1,37 @@
+# Flutter Summer Camp — analysis options, aligned with the flutter-front repo.
+#
+# The real project also layers an in-house `custom_lints` plugin on top; that package
+# is private, so it's omitted here. Everything else mirrors flutter-front exactly.
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.freezed.dart"
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.mocks.dart"
+  errors:
+    invalid_annotation_target: ignore
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+formatter:
+  page_width: 120
+  # Allows to preserve the trailing commas in the code when we want to keep it.
+  trailing_commas: preserve
+
+linter:
+  rules:
+    avoid_catching_errors: false
+    avoid_redundant_argument_values: false
+    implementation_imports: true
+    lines_longer_than_80_chars: false
+    omit_local_variable_types: false
+    one_member_abstracts: false
+    prefer_expression_function_bodies: true
+    prefer_relative_imports: false
+    public_member_api_docs: false
+    require_trailing_commas: false
+    sort_constructors_first: false

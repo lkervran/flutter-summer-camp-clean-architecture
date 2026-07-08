@@ -1,0 +1,9 @@
+# Flutter Summer Camp — toolchain pinned with mise (matches the flutter-front repo).
+#
+# Setup:
+#   mise install        # installs the pinned Flutter (and Dart, which ships with it)
+#   mise current        # verify the active versions
+#
+# Once installed, mise puts `flutter` and `dart` on your PATH automatically — no prefix needed.
+[tools]
+flutter = "3.41.1"

@@ -1,0 +1,21 @@
+name: camp_app
+description: mini_front demo app — a thin entrypoint over the composition layer.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  base_application:
+  base_providers:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  givn:

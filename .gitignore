@@ -1,0 +1,24 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+
+# Pub
+pubspec.lock        # apps usually commit this; packages don't — keeping repo lean for the camp
+.pub-cache/
+.pub/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# FVM
+.fvm/
+
+# NOTE: generated sources (*.g.dart, *.freezed.dart, *.gr.dart) are intentionally
+# committed so the scaffold runs on clone — just like the real project.

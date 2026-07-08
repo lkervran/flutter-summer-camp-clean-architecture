@@ -1,0 +1,28 @@
+name: cabins_presentation
+description: Cabins feature — presentation layer (screens, UI state, routing, theme).
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  auto_route: ^11.1.0
+  cabins_domain:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.2.1
+  freezed_annotation: ^3.1.0
+  riverpod_annotation: ^4.0.2
+
+dev_dependencies:
+  auto_route_generator: ^10.4.0
+  build_runner: ^2.11.1
+  flutter_test:
+    sdk: flutter
+  freezed: ^3.1.0
+  mockito: ^5.4.6
+  riverpod_generator: ^4.0.3
+  shouldly: ^0.5.0+1

@@ -1,0 +1,25 @@
+name: cabins_data
+description: Cabins feature — data layer (DTOs, data sources, repository implementations).
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+
+dependencies:
+  cabins_domain:
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  riverpod: ^3.2.1
+  riverpod_annotation: ^4.0.2
+
+dev_dependencies:
+  build_runner: ^2.11.1
+  freezed: ^3.1.0
+  givn:
+  json_serializable: ^6.9.4
+  mockito: ^5.4.6
+  riverpod_generator: ^4.0.3
+  shouldly: ^0.5.0+1
+  test: ^1.25.15

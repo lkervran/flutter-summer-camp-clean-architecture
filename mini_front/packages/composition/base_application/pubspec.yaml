@@ -1,0 +1,16 @@
+name: base_application
+description: Composition — the root app widget (MaterialApp.router), wiring the router + config.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  base_providers:
+  base_router:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.2.1

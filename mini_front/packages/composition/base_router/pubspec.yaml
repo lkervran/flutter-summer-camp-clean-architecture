@@ -1,0 +1,19 @@
+name: base_router
+description: Composition — the app's root router that composes every feature's routes.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  auto_route: ^11.1.0
+  cabins_presentation:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  auto_route_generator: ^10.4.0
+  build_runner: ^2.11.1

@@ -1,0 +1,18 @@
+name: mini_front_workspace
+publish_to: none
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+
+dev_dependencies:
+  very_good_analysis: ^6.0.0
+
+workspace:
+  - apps/camp_app
+  - packages/composition/base_application
+  - packages/composition/base_providers
+  - packages/composition/base_router
+  - packages/features/cabins/domain
+  - packages/features/cabins/data
+  - packages/features/cabins/presentation
+  - packages/utilities/givn
